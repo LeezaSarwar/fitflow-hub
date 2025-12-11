@@ -43,7 +43,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           ...baseItems,
           { icon: <Users className="w-5 h-5" />, label: 'Trainers', href: '/admin/trainers' },
           { icon: <Users className="w-5 h-5" />, label: 'Members', href: '/admin/members' },
-          { icon: <Calendar className="w-5 h-5" />, label: 'Classes', href: '/admin/classes' },
+          { icon: <Calendar className="w-5 h-5" />, label: 'Classes', href: '/classes' },
           { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', href: '/admin/payments' },
           { icon: <ClipboardCheck className="w-5 h-5" />, label: 'Attendance', href: '/admin/attendance' },
           { icon: <Bell className="w-5 h-5" />, label: 'Notifications', href: '/admin/notifications' },
@@ -51,7 +51,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       case 'trainer':
         return [
           ...baseItems,
-          { icon: <Calendar className="w-5 h-5" />, label: 'My Classes', href: '/trainer/classes' },
+          { icon: <Calendar className="w-5 h-5" />, label: 'My Classes', href: '/classes' },
           { icon: <FileText className="w-5 h-5" />, label: 'Workout Plans', href: '/trainer/workouts' },
           { icon: <Apple className="w-5 h-5" />, label: 'Diet Plans', href: '/trainer/diets' },
           { icon: <ClipboardCheck className="w-5 h-5" />, label: 'Attendance', href: '/trainer/attendance' },
@@ -60,7 +60,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       case 'member':
         return [
           ...baseItems,
-          { icon: <Calendar className="w-5 h-5" />, label: 'Class Schedule', href: '/member/schedule' },
+          { icon: <Calendar className="w-5 h-5" />, label: 'Class Schedule', href: '/classes' },
           { icon: <FileText className="w-5 h-5" />, label: 'Workout Plan', href: '/member/workout' },
           { icon: <Apple className="w-5 h-5" />, label: 'Diet Plan', href: '/member/diet' },
           { icon: <ClipboardCheck className="w-5 h-5" />, label: 'Attendance', href: '/member/attendance' },

@@ -10,6 +10,7 @@ import AuthPage from "./pages/AuthPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import TrainerDashboard from "./pages/trainer/TrainerDashboard";
 import MemberDashboard from "./pages/member/MemberDashboard";
+import ClassSchedulePage from "./pages/classes/ClassSchedulePage";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,9 @@ function AppRoutes() {
       
       {/* Member Routes */}
       <Route path="/member" element={<ProtectedRoute allowedRoles={['member']}><MemberDashboard /></ProtectedRoute>} />
+      
+      {/* Shared Routes (accessible by all authenticated users) */}
+      <Route path="/classes" element={<ProtectedRoute allowedRoles={['admin', 'trainer', 'member']}><ClassSchedulePage /></ProtectedRoute>} />
       
       <Route path="*" element={<NotFound />} />
     </Routes>
