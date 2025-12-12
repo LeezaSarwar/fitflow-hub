@@ -44,6 +44,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           { icon: <Users className="w-5 h-5" />, label: 'Trainers', href: '/admin/trainers' },
           { icon: <Users className="w-5 h-5" />, label: 'Members', href: '/admin/members' },
           { icon: <Calendar className="w-5 h-5" />, label: 'Classes', href: '/classes' },
+          { icon: <Apple className="w-5 h-5" />, label: 'Diet Plans', href: '/diet-plans' },
           { icon: <CreditCard className="w-5 h-5" />, label: 'Payments', href: '/admin/payments' },
           { icon: <ClipboardCheck className="w-5 h-5" />, label: 'Attendance', href: '/admin/attendance' },
           { icon: <Bell className="w-5 h-5" />, label: 'Notifications', href: '/admin/notifications' },
@@ -53,7 +54,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           ...baseItems,
           { icon: <Calendar className="w-5 h-5" />, label: 'My Classes', href: '/classes' },
           { icon: <FileText className="w-5 h-5" />, label: 'Workout Plans', href: '/trainer/workouts' },
-          { icon: <Apple className="w-5 h-5" />, label: 'Diet Plans', href: '/trainer/diets' },
+          { icon: <Apple className="w-5 h-5" />, label: 'Diet Plans', href: '/diet-plans' },
           { icon: <ClipboardCheck className="w-5 h-5" />, label: 'Attendance', href: '/trainer/attendance' },
           { icon: <BarChart3 className="w-5 h-5" />, label: 'Progress', href: '/trainer/progress' },
         ];
@@ -62,7 +63,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           ...baseItems,
           { icon: <Calendar className="w-5 h-5" />, label: 'Class Schedule', href: '/classes' },
           { icon: <FileText className="w-5 h-5" />, label: 'Workout Plan', href: '/member/workout' },
-          { icon: <Apple className="w-5 h-5" />, label: 'Diet Plan', href: '/member/diet' },
+          { icon: <Apple className="w-5 h-5" />, label: 'Diet Plan', href: '/diet-plans' },
           { icon: <ClipboardCheck className="w-5 h-5" />, label: 'Attendance', href: '/member/attendance' },
           { icon: <CreditCard className="w-5 h-5" />, label: 'Subscription', href: '/member/subscription' },
         ];
