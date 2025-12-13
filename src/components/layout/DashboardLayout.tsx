@@ -62,8 +62,8 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         return [
           ...baseItems,
           { icon: <Calendar className="w-5 h-5" />, label: 'Class Schedule', href: '/classes' },
-          { icon: <FileText className="w-5 h-5" />, label: 'Workout Plan', href: '/member/workout' },
-          { icon: <Apple className="w-5 h-5" />, label: 'Diet Plan', href: '/diet-plans' },
+          { icon: <FileText className="w-5 h-5" />, label: 'My Workout Plan', href: '/my-workout-plan' },
+          { icon: <Apple className="w-5 h-5" />, label: 'My Diet Plan', href: '/my-diet-plan' },
           { icon: <ClipboardCheck className="w-5 h-5" />, label: 'Attendance', href: '/attendance' },
           { icon: <CreditCard className="w-5 h-5" />, label: 'Subscription', href: '/member/subscription' },
         ];
