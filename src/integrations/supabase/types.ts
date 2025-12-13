@@ -87,6 +87,39 @@ export type Database = {
           },
         ]
       }
+      daily_progress: {
+        Row: {
+          completed: boolean
+          created_at: string
+          date: string
+          id: string
+          item_id: string
+          item_type: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          completed?: boolean
+          created_at?: string
+          date?: string
+          id?: string
+          item_id: string
+          item_type: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          completed?: boolean
+          created_at?: string
+          date?: string
+          id?: string
+          item_id?: string
+          item_type?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       diet_plans: {
         Row: {
           class_id: string | null
@@ -176,6 +209,108 @@ export type Database = {
           title?: string
           trainer_id?: string
           updated_at?: string
+        }
+        Relationships: []
+      }
+      generated_diet_plans: {
+        Row: {
+          calories: number | null
+          created_at: string
+          day_of_week: number
+          description: string
+          goal: Database["public"]["Enums"]["fitness_goal"]
+          id: string
+          meal_name: string
+          meal_time: string
+          user_id: string
+        }
+        Insert: {
+          calories?: number | null
+          created_at?: string
+          day_of_week: number
+          description: string
+          goal: Database["public"]["Enums"]["fitness_goal"]
+          id?: string
+          meal_name: string
+          meal_time: string
+          user_id: string
+        }
+        Update: {
+          calories?: number | null
+          created_at?: string
+          day_of_week?: number
+          description?: string
+          goal?: Database["public"]["Enums"]["fitness_goal"]
+          id?: string
+          meal_name?: string
+          meal_time?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      generated_workout_plans: {
+        Row: {
+          created_at: string
+          day_of_week: number
+          description: string | null
+          duration_minutes: number | null
+          exercise_name: string
+          exercise_time: string
+          goal: Database["public"]["Enums"]["fitness_goal"]
+          id: string
+          reps: number | null
+          sets: number | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          day_of_week: number
+          description?: string | null
+          duration_minutes?: number | null
+          exercise_name: string
+          exercise_time: string
+          goal: Database["public"]["Enums"]["fitness_goal"]
+          id?: string
+          reps?: number | null
+          sets?: number | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          day_of_week?: number
+          description?: string | null
+          duration_minutes?: number | null
+          exercise_name?: string
+          exercise_time?: string
+          goal?: Database["public"]["Enums"]["fitness_goal"]
+          id?: string
+          reps?: number | null
+          sets?: number | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      member_goals: {
+        Row: {
+          created_at: string
+          goal: Database["public"]["Enums"]["fitness_goal"]
+          id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          goal: Database["public"]["Enums"]["fitness_goal"]
+          id?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          goal?: Database["public"]["Enums"]["fitness_goal"]
+          id?: string
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
@@ -389,6 +524,7 @@ export type Database = {
     Enums: {
       app_role: "admin" | "trainer" | "member"
       attendance_status: "present" | "absent" | "late"
+      fitness_goal: "lose_weight" | "gain_weight" | "build_muscle"
       payment_status: "pending" | "completed" | "failed" | "refunded"
       subscription_plan: "monthly" | "quarterly" | "yearly" | "custom"
     }
@@ -520,6 +656,7 @@ export const Constants = {
     Enums: {
       app_role: ["admin", "trainer", "member"],
       attendance_status: ["present", "absent", "late"],
+      fitness_goal: ["lose_weight", "gain_weight", "build_muscle"],
       payment_status: ["pending", "completed", "failed", "refunded"],
       subscription_plan: ["monthly", "quarterly", "yearly", "custom"],
     },
