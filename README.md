@@ -29,3 +29,56 @@ npm install
 
 # Step 4: Start the development server
 npm run dev
+````
+
+
+Make sure **Bun** is installed on your system.  
+Install Bun from here: https://bun.sh/docs/installation
+
+---
+
+### Edit Files Directly on GitHub
+
+- Open your repository on GitHub
+- Navigate to the file you want to edit
+- Click the **Edit (✏️)** button
+- Make changes and commit them
+
+Changes pushed to GitHub will automatically deploy on Vercel (if connected).
+
+---
+
+### Use GitHub Codespaces
+
+- Go to your GitHub repository
+- Click the **Code** button
+- Open the **Codespaces** tab
+- Click **New Codespace**
+- Edit files, then commit and push your changes
+
+---
+
+## Technologies Used
+
+This project is built using the following technologies:
+
+- Bun
+- Vite
+- TypeScript
+- React
+- Tailwind CSS
+- shadcn/ui
+
+---
+
+## Deployment
+
+The project is deployed using **Vercel**.
+
+Whenever you push changes to the connected GitHub repository, Vercel automatically builds and deploys the latest version.
+
+---
+
+## Custom Domain
+
+
