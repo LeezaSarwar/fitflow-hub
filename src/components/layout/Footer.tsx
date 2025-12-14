@@ -1,4 +1,4 @@
-import { Dumbbell, Linkedin, Github, Twitter, Globe } from 'lucide-react';
+import { Dumbbell, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Footer() {
@@ -20,17 +20,17 @@ export function Footer() {
               Transform your body, transform your life. Join the ultimate fitness experience.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/in/leeza-sarwar/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <a href="#" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
+                <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://github.com/LeezaSarwar" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
-                <Github className="w-5 h-5" />
+              <a href="#" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
+                <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://x.com/LeezaSarwar?t=GuicOuNUal0TEmJ6UN4FAA&s=09" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
+              <a href="#" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="https://leezaportfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
-                <Globe className="w-5 h-5" />
+              <a href="#" className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors">
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -69,9 +69,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm space-y-2">
+        <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm">
           <p>&copy; {new Date().getFullYear()} PowerFit. All rights reserved.</p>
-          <p>Built with love by <a href="https://www.linkedin.com/in/leeza-sarwar/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Leeza Sarwar</a>.</p>
         </div>
       </div>
     </footer>
