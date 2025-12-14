@@ -81,4 +81,22 @@ Whenever you push changes to the connected GitHub repository, Vercel automatical
 
 ## Custom Domain
 
+You can connect a custom domain to this project using the Vercel dashboard.
+
+Steps:
+- Go to your Vercel Project
+- Open **Settings > Domains**
+- Add and configure your custom domain
+
+---
+
+## Author
+
+**Built with ❤️ by Leeza Sarwar**
+
+- LinkedIn: https://www.linkedin.com/in/leeza-sarwar/
+- GitHub: https://github.com/LeezaSarwar
+- Portfolio: https://leezaportfolio.vercel.app/
+
+
 
