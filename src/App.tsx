@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AuthPage from "./pages/AuthPage";
+import AboutPage from "./pages/AboutPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import TrainerDashboard from "./pages/trainer/TrainerDashboard";
 import MemberDashboard from "./pages/member/MemberDashboard";
@@ -32,6 +33,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Index />} />
+      <Route path="/about" element={<AboutPage />} />
       <Route path="/auth" element={<AuthPage />} />
       
       {/* Admin Routes */}
