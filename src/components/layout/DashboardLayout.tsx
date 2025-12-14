@@ -124,7 +124,13 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
         {/* Bottom Actions */}
         <div className="p-4 border-t border-sidebar-border space-y-1">
-          <Link to="/settings" className="sidebar-link">
+          <Link 
+            to="/settings" 
+            className={cn(
+              'sidebar-link',
+              location.pathname === '/settings' && 'active'
+            )}
+          >
             <Settings className="w-5 h-5" />
             <span>Settings</span>
           </Link>

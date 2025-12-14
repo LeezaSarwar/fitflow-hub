@@ -16,6 +16,7 @@ import DietPlansPage from "./pages/diet-plans/DietPlansPage";
 import AttendancePage from "./pages/attendance/AttendancePage";
 import GeneratedDietPage from "./pages/generated-plans/GeneratedDietPage";
 import GeneratedWorkoutPage from "./pages/generated-plans/GeneratedWorkoutPage";
+import SettingsPage from "./pages/settings/SettingsPage";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ function AppRoutes() {
       <Route path="/classes" element={<ProtectedRoute allowedRoles={['admin', 'trainer', 'member']}><ClassSchedulePage /></ProtectedRoute>} />
       <Route path="/diet-plans" element={<ProtectedRoute allowedRoles={['admin', 'trainer', 'member']}><DietPlansPage /></ProtectedRoute>} />
       <Route path="/attendance" element={<ProtectedRoute allowedRoles={['admin', 'trainer', 'member']}><AttendancePage /></ProtectedRoute>} />
+      <Route path="/settings" element={<ProtectedRoute allowedRoles={['admin', 'trainer', 'member']}><SettingsPage /></ProtectedRoute>} />
       
       <Route path="*" element={<NotFound />} />
     </Routes>
